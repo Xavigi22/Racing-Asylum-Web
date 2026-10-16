@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Gimenez</title>
+
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous">
+</head>
+
+<body class="ra">
+
+<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="primary">
+  <div class="container-fluid">
+<a class="navbar-brand" href="/">
+  <img src="{% static 'images/logo.jfif' %}" alt="icono" width="60" height="60">
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <a><span class="navbar-item">Racing Asylum</span></a>
+  </ul>
+
+  <div class="d-flex ms-auto">
+    <span id="reloj" class="badge border border-light text-light fs-5 p-2">
+      00:00:00
+    </span>
+  </div>
+  </div>
+  </div>
+</nav>
+
+<img src="{% static 'images/portada.png' %}"
+  alt="Portada de Racing Asylum"
+  class="img-fluid d-block w-100">
+
+<div class="parrafo">
+    <p>Bienvenido al sitio oficial de Racing Asylum</p>
+</div>
+
+<section class="container my-5" aria-label="Secciones de Racing Asylum">
+  <div class="row g-4">
+    <div class="col-12 col-md-6">
+      <section class="card h-100 shadow-sm bg-primary text-white">
+        <div class="card-body">
+          <h1>Vehículos</h1>
+          <p class="card-text">Conoce lo que pilotaras en Racing Asylum.</p>
+          <h3>Alpha GTR</h3>
+          <p class="card-text">Una version deslimitada de un GT2 del WEC, es un vehículo de alto rendimiento diseñado para competir en las carreras más exigentes, por lo que es el mas equilibrado de todos.</p>
+          <h3>Katsuma RIDGE</h3>
+          <p class="card-text">Una camioneta diseñada para soportar terrenos difíciles y resistir todo lo que le tires encima. Esto le permite navegar por terrenos que otros vehículos no podrían manejar, sacificando su velocidad en la carretera.</p>
+          <h3>Delta DZ1</h3>
+          <p class="card-text">Por alguna razon, el equipo "Delta" decidio sacar un taxi DZ1 de un garage abandonado en lo profundo de Nueva York. Puede que oculte alguna sorpresa.</p>
+          <h3>CR2002</h3>
+          <p class="card-text">El mitico equipo italiano Modena Racing Team se unio recientemente al campeonato con su monoplaza del 2002 modificado para encajar en el reglamento. Este auto es el mas rapido entre los 4 pero ademas es el mas fragil.</p>
+        </div>
+      </section>
+    </div>
+    <div class="col-12 col-md-6">
+      <section class="card h-100 shadow-sm bg-primary text-white">
+        <div class="card-body">
+          <h2 class="card-title">El juego</h2>
+          <p class="card-text">Racing Asylum es un juego de carreras multijugador de hasta 4 jugadores que combina la velocidad con el caos total en uno solo.</p>
+        <p class="card-text">Juega contra tus amigos para ver quien es el más rápido, o destruyelos antes de que lleguen a la meta.</p>
+        <p class="card-text">En el arsenal de armas, cada vez que pases por una de las Plataformas de Armeria, recogeras un arma aleatoria entre:</p>
+        <p class="card-text">Misil teledirigido: Al accionarlo se lazara un misil al rival mas cercano.</p>
+        <p class="card-text">Minas: Al accionarlo se colocara una mina en el suelo que explotara al ser tocada por un rival.</p>
+        <p class="card-text">Herramienta: Permite curar la salud del auto</p>
+        <p class="card-text">PEM: Pulso Electromagnético que desactiva las habilidades del resto durante 10 segundos.</p>
+        <p class="card-text">Banda de clavos: Una banda de clavos se despliega y reduce la velocidad y causa daño a aquellos que la pisen.</p>
+        <p class="card-text">Blindaje: Un escudo que evita que hagan daño durante 3 segundos.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" aria-label="Fecha de lanzamiento">
+  <div class="row justify-content-center">
+    <div class="col-11 col-md-8 col-lg-6">
+      <div class="card bg-primary text-white text-center shadow-sm">
+        <div class="card-body py-4">
+          <h2 class="card-title">Fecha de lanzamiento</h2>
+          <p class="card-text fs-4 mb-0">04/11/26</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p>ROCKSTAR NO TENGO MIEDO DE TU "GTA VI"</p>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForClyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+<footer class="bg-primary text-white pt-4 pb-2 mt-5">
+
+  <div class="container">
+
+
+<div class="row">
+
+  <div class="col-md-6 text-center text-md-start mb-3">
+
+    <p class="mb-0">Copyright © 2026</p>
+
+    <p class="text-light mb-0">
+      Autor: Bruno Xavier Gimenez
+    </p>
+  </div>
+</footer>
+</body>
+</html>
